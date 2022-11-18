@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.25" height="27" viewBox="0 0 29.25 27">
+  <g id="list-numbered" transform="translate(-4.5 -4.5)">
+    <path id="Path_64" data-name="Path 64" d="M18,24.75H33.75V27H18Z" fill="#979ea3"/>
+    <path id="Path_65" data-name="Path 65" d="M18,9H33.75v2.25H18Z" fill="#979ea3"/>
+    <path id="Path_66" data-name="Path 66" d="M9,13.5v-9H6.75V5.625H4.5v2.25H6.75V13.5H4.5v2.25h6.75V13.5Z" fill="#979ea3"/>
+    <path id="Path_67" data-name="Path 67" d="M11.25,31.5H4.5V27a2.25,2.25,0,0,1,2.25-2.25H9V22.5H4.5V20.25H9a2.25,2.25,0,0,1,2.25,2.25v2.25A2.25,2.25,0,0,1,9,27H6.75v2.25h4.5Z" fill="#979ea3"/>
+  </g>
+</svg>

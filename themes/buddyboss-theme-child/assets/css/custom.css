@@ -1,0 +1,224 @@
+/*--------------------------------------------------------------
+This is your custom stylesheet.
+
+Add your own styles here to make theme updates easier.
+To override any styles from other stylesheets, simply copy them into here and edit away.
+
+Make sure to respect the media queries! Otherwise you may
+accidentally add desktop styles to the mobile layout.
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+--------------------------------------------------------------*/
+
+.mobileFooter{
+    display: none;
+}
+.mobileFooter .innerWrap{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    position: fixed;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    border-radius: 8px;
+    gap: 18px;
+    -webkit-box-shadow: 0px -6px 8px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px -6px 8px 0px rgba(0,0,0,0.17);
+    box-shadow: 0px -6px 8px 0px rgba(0,0,0,0.17);
+    background: #25292c; 
+    background: -moz-linear-gradient(top,  #25292c 0%, #242629 100%);
+    background: -webkit-linear-gradient(top,  #25292c 0%,#242629 100%); 
+    background: linear-gradient(to bottom,  #25292c 0%,#242629 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25292c', endColorstr='#242629',GradientType=0 );
+    padding:10px 15px;
+    /* bottom: 10px; */
+    bottom: 0px;
+    align-items: center;
+    border-top: 2px solid #34383b;
+}
+.home-page.directory .header.entry-header{
+    display: none;
+} 
+
+.mobileFooter .innerWrap .item a{
+    padding: 10px 0;
+    display: block;
+}
+.mobileFooter .innerWrap .item a img{
+    margin-bottom: 4px;
+}
+.mobileFooter .innerWrap .item a h5{
+    margin-bottom: 0;
+    color: #979EA3;
+}
+.mobileFooter .innerWrap .item a.logoTh{
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border-radius: 50%;
+    background: #1DA1F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobileFooter .innerWrap .item a.logoTh img{
+    margin-bottom: 0;
+}
+.mobile-header-icon .innerWrap{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    gap: 20px;
+    border-bottom: 1px solid #24272C;
+    display: none;
+}
+.appWrapper .tabContent{
+    display: none;
+}
+.appWrapper .tabContent.content-show{
+    display: block;
+}
+.tabContentWrap{
+    margin-top: 25px;
+    /* height: calc(100vh - 255px);
+    overflow: auto;
+    padding-right: 30px;
+    padding-left: 30px; */
+}
+.admin-bar .tabContentWrap{
+    height: calc(100vh - 301px);
+}
+.page-template-home-template-php #content, 
+.page-template-home-template-php #content > .container, 
+.page-template-home-template-php #content > .container .appWrapper{
+    padding-right: 0;
+    padding-left: 0;
+}
+.appWrapper .mobile-header-icon .innerWrap .item a:not(.tab-show) img{
+    filter: brightness(0) invert(1);
+}
+.limitAlert .innerWrap{
+    padding: 25px 15px;
+    display: flex;
+    border-bottom: 1px solid #4D4D4D;
+}
+.limitAlert .innerWrap .img{
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #42494c;
+    border-radius: 50%;
+}
+.limitAlert .innerWrap .cont{
+    padding: 0 15px;
+    flex: 0 0 calc(100% - 46px);
+}
+.limitAlert .innerWrap .cont h3{
+    font-size: 19px;
+    margin: 0;
+}
+.myStats .itemWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.myStats .itemWrap .item{
+    flex: 0 0 33.33%;
+    width: 33.33%;
+    max-width: 33.33%;
+    border-right: 1px solid #4D4D4D;
+    border-top: 1px solid #4D4D4D;
+    padding: 15px;
+    text-align: center;
+}
+.myStats .itemWrap .item:nth-child(3n){
+    border-right-color: transparent;
+}
+.myStats .itemWrap .item:nth-child(1),
+.myStats .itemWrap .item:nth-child(2),
+.myStats .itemWrap .item:nth-child(3){
+    border-top-color: transparent;
+}
+.myStats .itemWrap .item .graphImg{
+    margin-bottom: 6px;
+}
+.myStats .itemWrap .item .graphImg img{
+    max-width: 73px;
+}
+.myStats .itemWrap .item .title h4{
+    font-size: 19px;
+    font-weight: bold;
+    color: #AEBABF;
+    margin-bottom: 0;
+}
+.myStats{
+    padding-top: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.limitAlert .innerWrap .cont p{
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px){
+    .mobileFooter{ 
+        display: block;
+    }   
+    .mobile-header-icon .innerWrap{ 
+        display: flex;
+    }
+
+    #page.site{
+        padding-bottom: 115px;
+    }
+
+    .wp-dark-mode-side-toggle-wrap.floating, 
+    .wp-dark-mode-switcher.floating {
+        bottom: 116px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .mobileFooter .innerWrap .item a img{
+        max-width: 22px;
+    }
+    .mobileFooter .innerWrap .item a h5{
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width: 370px){
+    .mobileFooter .innerWrap .item a img{
+        max-width: 18px;
+    }
+    .mobileFooter .innerWrap .item a h5{
+        font-size: 80%;
+    }
+    .mobileFooter .innerWrap{
+        gap: 10px;
+    }
+}
+.mobile_menu_item .mobile_icon_menu{
+    display: none;
+}
+
+.mobile_menu_item .mobile_icon_menu{
+    display: none;
+}
+
+.mobile_menu_item .mobile_icon_menu.menu-show{
+    display: block;
+}
+
+.bb-icon-shopping-cart.customicon.wp-dark-mode-ignore{
+    font-size: 34px !important;
+    color: #ffff !important;
+    margin-left: 10px !important;
+}
+span.customcount.count.wp-dark-mode-ignore {
+    background-color: unset !important;
+    position: relative;
+    top: -15px;
+    left: -20px;
+    padding: 0px !important;
+}
